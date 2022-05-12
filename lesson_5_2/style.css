@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+    margin: 0;
+    padding:0;
+    max-width: 100%;
+}
+
+.rectangle {
+    position: absolute;
+    width: 2011px;
+    height: 84px;
+    left: 0px;
+    top: 0px;
+    background: #007765;
+}
+
+.small {
+    position: absolute;
+    left: 0%;
+    right: 75.55%;
+    top: 0%;
+    bottom: 0.09%;
+}
+
+.large {
+    position: absolute;
+    left: 0.02%;
+    right: 0%;
+    top: 0%;
+    bottom: -0.09%;
+}
+
+.logo_head {
+    position: absolute;
+    width: 184px;
+    height: 45px;
+    left: 501px;
+    top: 20px;
+}
+
+.problem {
+    position: absolute;
+    width: 129px;
+    height: 29px;
+    left: 1187px;
+    top: 28px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.pipe {
+    position: absolute;
+    width: 7px;
+    height: 29px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.pipe1 {
+    left: 1324px;
+    top: 28px;
+}
+
+.pipe2 {
+    left: 1501px;
+    top: 29px;
+}
+
+.coin {
+    position: absolute;
+    width: 154px;
+    height: 29px;
+    left: 1339px;
+    top: 29px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.team {
+    position: absolute;
+    width: 95px;
+    height: 29px;
+    left: 1516px;
+    top: 29px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.subhead {
+    position: absolute;
+    width: 2011px;
+    height: 403px;
+    left: 0px;
+    top: 84px;
+    background: url(./img/subheader.png);
+}
+
+.piper_net {
+    position: absolute;
+    width: 1219px;
+    height: 83px;
+    left: 396px;
+    top: 120px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
+
+    color: #FFFFFF;
+}

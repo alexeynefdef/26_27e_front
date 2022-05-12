@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul class="head_nav_list">
+            <li class="head_nav_list_item home_link">
+                <a href="#" class="head_nav_list_link">Home</a>
+            </li>
+            <li class="head_nav_list_item">
+                <a href="./flex.html" class="head_nav_list_link">Flex</a>
+            </li>
+            <li class="head_nav_list_item">
+                <a href="./grid.html" class="head_nav_list_link">Grid</a>
+            </li>
+            <li class="head_nav_list_item">
+                <a href="#" class="head_nav_list_link">Contact</a>
+            </li>
+            <li class="head_nav_list_item">
+                <a href="./about.html" class="head_nav_list_link">About</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Layout types</h1>
+    </header>
+
+    <div class="content_main">
+        <div class="main_content_wiki">
+            <h1>CSS</h1>
+            <hr>
+            <p>Материал из Википедии — свободной энциклопедии</p>
+            <p class="version_box">
+                Текущая версия страницы пока <a
+                    href="https://ru.wikipedia.org/wiki/Википедия:Проверка_статей/Пояснение_для_читателей">не
+                    проверялась</a> опытными участниками и может значительно отличаться от <a
+                    href="https://ru.wikipedia.org/w/index.php?title=CSS&stable=1">версии</a>, проверенной 27 мая 2020
+                года; проверки требуют <a
+                    href="https://ru.wikipedia.org/w/index.php?title=CSS&oldid=107323178&diff=cur&diffonly=0"> 50
+                    правок</a>.
+            </p>
+            <p class="other_meaning">
+                <em>У этого термина существуют и другие значения, см. <a
+                        href="https://ru.wikipedia.org/wiki/CSS_(значения)">CSS (значения)</a>.</em>
+            </p>
+            <p>
+                <b>CSS</b> (/<a href="https://ru.wikipedia.org/wiki/Международный_фонетический_алфавит">siːɛsɛs</a>/ <a
+                    href="https://ru.wikipedia.org/wiki/Английский_язык">англ.</a> Cascading Style Sheets «каскадные
+                таблицы стилей») — <a href="https://ru.wikipedia.org/wiki/Формальный_язык">формальный язык</a> описания
+                внешнего вида документа (<a href="https://ru.wikipedia.org/wiki/Веб-страница">веб-страницы</a>),
+                написанного с использованием <a href="https://ru.wikipedia.org/wiki/Язык_разметки">языка разметки</a>
+                (чаще всего <a href="https://ru.wikipedia.org/wiki/HTML">HTML</a> или <a
+                    href="https://ru.wikipedia.org/wiki/XHTML">XHTML</a>).
+                <br>
+                Также может применяться к любым <a href="https://ru.wikipedia.org/wiki/XML">XML-документам</a>,
+                например, к <a href="https://ru.wikipedia.org/wiki/SVG">SVG</a> или <a
+                    href="https://ru.wikipedia.org/wiki/XUL">XUL</a>.
+            </p>
+
+            <div class="nav_box">
+                <h4 class="nav_box_title">Содержание</h4>
+                <ul class="nav_list nav_list_main">
+                    <li>
+                        <a href="#Обзор">
+                            <span class="nav_list_order">1</span>
+                            <span class="nav_list_label">Обзор</span>
+                        </a>
+                        <ul class="nav_list">
+                            <li>
+                                <a href="#Использование_CSS">
+                                    <span class="nav_list_order">1.1</span>
+                                    <span class="nav_list_label">Использование CSS</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#Способы_подключения_CSS_к_документу">
+                                    <span class="nav_list_order">1.2</span>
+                                    <span class="nav_list_label">Способы подключения CSS к документу</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#Правила_построения_CSS">
+                                    <span class="nav_list_order">1.3</span>
+                                    <span class="nav_list_label">Правила построения CSS</span>
+                                </a>
+                                <ul class="nav_list">
+                                    <li>
+                                        <a href="# Виды_селекторов">
+                                            <span class="nav_list_order">1.3.1</span>
+                                            <span class="nav_list_label"> Виды селекторов</span>
+                                        </a>
+                                        <ul class="nav_list">
+                                            <li>
+                                                <a href="#Универсальный_селектор">
+                                                    <span class="nav_list_order">1.3.1.1</span>
+                                                    <span class="nav_list_label">Универсальный селектор</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#Селектор_тегов">
+                                                    <span class="nav_list_order">1.3.1.2</span>
+                                                    <span class="nav_list_label">Селектор теговр</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#Селектор_классов">
+                                                    <span class="nav_list_order">1.3.1.3</span>
+                                                    <span class="nav_list_label">Селектор классов</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#Селектор_идентификаторов">
+                                                    <span class="nav_list_order">1.3.1.4</span>
+                                                    <span class="nav_list_label">Селектор идентификаторов</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#Селектор_атрибутов">
+                                                    <span class="nav_list_order">1.3.1.5</span>
+                                                    <span class="nav_list_label">Селектор атрибутов</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#Селектор_потомков_(контекстный_селектор)">
+                                                    <span class="nav_list_order">1.3.1.6</span>
+                                                    <span class="nav_list_label">Селектор потомков (контекстный
+                                                        селектор)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#Селектор_дочерних_элементов">
+                                                    <span class="nav_list_order">1.3.1.7</span>
+                                                    <span class="nav_list_label">Селектор дочерних элементов</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#Селектор_элементов_одного_уровня">
+                                                    <span class="nav_list_order">1.3.1.8</span>
+                                                    <span class="nav_list_label">Селектор элементов одного уровня</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#Селектор_псевдоклассов">
+                                                    <span class="nav_list_order">1.3.1.9</span>
+                                                    <span class="nav_list_label">Селектор псевдоклассов</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#Селектор_псевдоэлементов">
+                                                    <span class="nav_list_order">1.3.1.10</span>
+                                                    <span class="nav_list_label">Селектор псевдоэлементов</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#Классы_и_идентификаторы_элементов">
+                                    <span class="nav_list_order">1.4</span>
+                                    <span class="nav_list_label">Классы и идентификаторы элементовS</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#Наследование._Каскадирование._Приоритеты_стилей_CSS.">
+                                    <span class="nav_list_order">1.5</span>
+                                    <span class="nav_list_label">Наследование. Каскадирование. Приоритеты стилей
+                                        CSS.</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#Пример_таблицы_стилей">
+                                    <span class="nav_list_order">1.6</span>
+                                    <span class="nav_list_label">Пример таблицы стилей</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#CSS-вёрстка">
+                            <span class="nav_list_order">2</span>
+                            <span class="nav_list_label">CSS-вёрстка</span>
+                        </a>
+                    </li>
+                    <li> <a href="#История_создания_и_развития_CSS">
+                            <span class="nav_list_order">3</span>
+                            <span class="nav_list_label">История создания и развития CSS</span>
+                        </a>
+                        <ul class="nav_list">
+                            <li><a href="#Уровень_1_(CSS1)">
+                                    <span class="nav_list_order">3.1</span>
+                                    <span class="nav_list_label">Уровень 1 (CSS1)</span>
+                                </a></li>
+                            <li><a href="#Уровень_2_(CSS2)">
+                                    <span class="nav_list_order">3.2</span>
+                                    <span class="nav_list_label">Уровень 2 (CSS2)</span>
+                                </a>
+                                <ul class="nav_list">
+                                    <li><a href="#Уровень_2,_ревизия_1_(CSS2.1)">
+                                            <span class="nav_list_order">3.2.1</span>
+                                            <span class="nav_list_label">Уровень 2, ревизия 1 (CSS2.1)</span>
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#Уровень_3_(CSS3)">
+                                    <span class="nav_list_order">3.3</span>
+                                    <span class="nav_list_label">Уровень 3 (CSS3)</span>
+                                </a></li>
+                            <li><a href="#Уровень_4_(CSS4)">
+                                    <span class="nav_list_order">3.4</span>
+                                    <span class="nav_list_label">Уровень 4 (CSS4)</span>
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#Поддержка_CSS_браузерами">
+                            <span class="nav_list_order">4</span>
+                            <span class="nav_list_label">Поддержка CSS браузерами</span>
+                        </a>
+                        <ul class="nav_list">
+                            <li><a href="#Различные_блоковые_модели">
+                                    <span class="nav_list_order">4.1</span>
+                                    <span class="nav_list_label">Различные блоковые модели</span>
+                                </a></li>
+                            <li><a href="#CSS-фильтры">
+                                    <span class="nav_list_order">4.2</span>
+                                    <span class="nav_list_label">CSS-фильтры</span>
+                                </a></li>
+                            <li><a href="#Безопасность">
+                                    <span class="nav_list_order">4.3</span>
+                                    <span class="nav_list_label">Безопасность</span>
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#CSS_Framework">
+                            <span class="nav_list_order">5</span>
+                            <span class="nav_list_label">CSS Framework</span>
+                        </a></li>
+                    <li><a href="#Расширения_CSS">
+                            <span class="nav_list_order">6</span>
+                            <span class="nav_list_label">Расширения CSS</span>
+                        </a></li>
+                    <li><a href="#См._также">
+                            <span class="nav_list_order">7</span>
+                            <span class="nav_list_label">См. также</span>
+                        </a></li>
+                    <li><a href="#Примечания">
+                            <span class="nav_list_order">8</span>
+                            <span class="nav_list_label">Примечания</span>
+                        </a></li>
+                    <li><a href="#Литература">
+                            <span class="nav_list_order">9</span>
+                            <span class="nav_list_label">Литература</span>
+                        </a></li>
+                    <li><a href="#Ссылки">
+                            <span class="nav_list_order">10</span>
+                            <span class="nav_list_label">Ссылки</span>
+                        </a>
+                        <ul class="nav_list">
+                            <li><a href="#Англоязычные_ресурсы">
+                                    <span class="nav_list_order">10.1</span>
+                                    <span class="nav_list_label">Англоязычные ресурсы</span>
+                                </a></li>
+                            <li><a href="#Русскоязычные_ресурсы">
+                                    <span class="nav_list_order">10.2</span>
+                                    <span class="nav_list_label">Русскоязычные ресурсы</span>
+                                </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="Обзор">
+                <h1>Обзор</h1>
+                <hr>
+                <div id="Использование_CSS">
+                    <h2>Использование CSS</h2>
+                    <p>
+                        CSS используется создателями <a
+                            href="https://ru.wikipedia.org/wiki/Веб-страница">веб-страниц</a> для задания <a
+                            href="https://ru.wikipedia.org/wiki/Цвет">цветов</a>, <a
+                            href="https://ru.wikipedia.org/wiki/Шрифт">шрифтов</a>, стилей, расположения отдельных
+                        блоков и других аспектов представления внешнего вида этих веб-страниц. Основной целью разработки
+                        CSS является ограждение и отделение описания логической структуры веб-страницы (которое
+                        производится с помощью <a href="https://ru.wikipedia.org/wiki/HTML">HTML</a> или других <a
+                            href="https://ru.wikipedia.org/wiki/Язык_разметки">языков разметки</a>) от описания внешнего
+                        вида этой веб-страницы (которое теперь производится с помощью <a
+                            href="https://ru.wikipedia.org/wiki/Формальный_язык">формального языка</a> CSS). Такое
+                        разделение может увеличить доступность документа, предоставить большую гибкость и возможность
+                        управления его представлением, а также уменьшить сложность и повторяемость в структурном
+                        содержимом.
+                    </p>
+                    <p>
+                        Кроме того, CSS позволяет представлять один и тот же документ в различных стилях или <a
+                            href="https://ru.wikipedia.org/wiki/Метод">методах</a> вывода, таких как экранное
+                        представление, печатное представление, чтение голосом (специальным голосовым браузером или
+                        программой чтения с экрана) или при выводе устройствами, использующими <a
+                            href="https://ru.wikipedia.org/wiki/Шрифт_Брайля">шрифт Брайля</a>
+                    </p>
+                </div>
+                <div id="Способы_подключения_CSS_к_документу">
+                    <h2>Способы подключения CSS к документу</h2>
+                    <p>
+                        Правила CSS могут располагаться как в самом <a
+                            href="https://ru.wikipedia.org/wiki/Веб-документ">веб-документе</a>, внешний вид которого
+                        они описывают, так и во внешних <a href="https://ru.wikipedia.org/wiki/Файл">файлах</a>, имеющих
+                        <a href="https://ru.wikipedia.org/wiki/Формат_файла">расширение</a> .css. Формат CSS — это <a
+                            href="https://ru.wikipedia.org/wiki/Текстовый_файл">текстовый файл</a>, в котором содержится
+                        перечень правил CSS и комментариев к ним.
+                        <br>
+                        Стили CSS могут быть подключены или внедрены в описываемый ими <a
+                            href="https://ru.wikipedia.org/wiki/Веб-документ">веб-документ</a> четырьмя способами:
+                    </p>
+
+                    <ul>
+                        <li>
+                            когда описание стилей находится в отдельном файле, оно может быть подключено к документу
+                            посредством элемента <code>&lt;link&gt;</code>, включённого в элемент
+                            <code>&lt;head&gt;</code>:
+                        </li>
+                    </ul>
+                    <div class="code_box">
+                        <pre><code>
+    <span class="text_orange">&lt;!DOCTYPE html&gt;</span>
+    &lt;<span class="text_green">html</span>&gt;
+        &lt;<span class="text_green">head</span>&gt;
+            ...
+            &lt;<span class="text_green">link</span> <span class="text_light_green">rel</span>=<span class="text_red">"stylesheet"</span> <span class="text_light_green">type</span>=<span class="text_red">"text/css"</span> <span class="text_light_green">href</span>=<span class="text_red">"style.css"</span>&gt;
+        &lt;/<span class="text_green">head</span>&gt;
+        &lt;<span class="text_green">body</span>&gt;
+            .....
+        &lt;/<span class="text_green">body</span>&gt;
+    &lt;/<span class="text_green">html</span>&gt;
+                        </code></pre>
+                    </div>
+
+                    <ul>
+                        <li>
+                            когда файл стилей размещается отдельно от родительского документа, он может быть подключён к
+                            документу инструкцией <code>@import</code> в элементе<code>&lt;style&gt;</code>:
+                        </li>
+                    </ul>
+                    <div class="code_box">
+                        <pre><code>
+    <span class="text_orange">&lt;!DOCTYPE html&gt;</span>
+    &lt;<span class="text_green">html</span>&gt;
+        &lt;<span class="text_green">head</span>&gt;
+            ...
+            &lt;<span class="text_green">style</span> <span class="text_light_green">media</span>=<span class="text_red">"all"</span>&gt;
+                @<span class="text_green">import url</span>(<span class="text_green">style</span>.<span class="text_blue">css</span>)
+            &lt;/<span class="text_green">style</span>&gt;
+        &lt;/<span class="text_green">head</span>&gt;
+        &lt;<span class="text_green">body</span>&gt;
+            .....
+        &lt;/<span class="text_green">body</span>&gt;
+    &lt;/<span class="text_green">html</span>&gt;
+                    </code></pre>
+                    </div>
+
+                    <ul>
+                        <li>
+                            когда стили описаны внутри документа, они могут быть включены в элемент &lt;style&gt;,
+                            который, включается в элемент &lt;head&gt;:
+                        </li>
+                    </ul>
+                    <div class="code_box">
+                        <pre><code>
+    <span class="text_orange">&lt;!DOCTYPE html&gt;</span>
+    &lt;<span class="text_green">html</span>&gt;
+        &lt;<span class="text_green">head</span>&gt;
+            ...
+            &lt;<span class="text_green">style</span>&gt;
+            <span class="text_green">body</span> {
+                <span class="text_green">color</span> <span class="text_green">red</span>;
+                }
+            &lt;/<span class="text_green">style</span>&gt;
+        &lt;/<span class="text_green">head</span>&gt;
+        &lt;<span class="text_green">body</span>&gt;
+            .....
+        &lt;/<span class="text_green">body</span>&gt;
+    &lt;/<span class="text_green">html</span>&gt;
+                    </code></pre>
+                    </div>
+
+                    <ul>
+                        <li>
+                            когда стили описаны в теле документа, они могут располагаться в атрибутах отдельного
+                            элемента
+                        </li>
+                    </ul>
+                    <div class="code_box">
+                        <pre><code>
+    <span class="text_orange">&lt;!DOCTYPE&gt;</span>
+    &lt;<span class="text_green">html</span>&gt;
+        &lt;<span class="text_green">head</span>&gt;
+            ...
+        &lt;/<span class="text_green">head</span>&gt;
+        &lt;<span class="text_green">body</span>&gt;
+            &lt;<span class="text_green">p</span> <span class="text_light_green">style</span>=<span class="text_red">"font-size: 20px; color: green; font-family: arial, helvetica, sans-serif"</span>&gt;
+                .....
+            &lt;/<span class="text_green">p</span>&gt;
+        &lt;/<span class="text_green">body</span>&gt;
+    &lt;/<span class="text_green">html</span>&gt;
+                    </code></pre>
+                    </div>
+                    <p>
+                        В первых двух случаях к документу применены <i>внешние стили</i>, а во вторых — <i>внутренние
+                            стили</i>.
+                    </p>
+                    <p>
+                        Для добавления CSS к <a href="https://ru.wikipedia.org/wiki/XML">XML-документу</a> последний
+                        должен содержать специальную ссылку на файл стилей:
+                    </p>
+                    <div class="code_box">
+                        <code><span class="text_orange">&lt;?xml-stylesheet type="text/css" href="style.css"?&gt;</span></code>
+                    </div>
+                </div>
+                <div id="Правила_построения_CSS">
+                    <h2>Правила построения CSS</h2>
+                    <p>
+                        В первых трёх случаях подключения стилей CSS к документу (см. выше) каждое правило CSS из файла
+                        имеет две основные части — <i>селектор</i> и <i>блок объявлений</i>. <i>Селектор</i>,
+                        расположенный в левой части правила до знака «{», определяет, на какие части документа
+                        (возможно, специально обозначенные) распространяется правило. <i>Блок объявлений</i>
+                        располагается в правой части правила. Он помещается в фигурные скобки, и, в свою очередь,
+                        состоит из одного или более <i>объявлений</i>, разделённых знаком «;». Каждое <i>объявление</i>
+                        представляет собой сочетание <i>свойства CSS</i> и <i>значения</i>, разделённых знаком «:».
+                        Селекторы могут группироваться в одной строке через запятую. В таком случае свойство применяется
+                        к каждому из них.
+                    </p>
+                    <div class="code_box">
+                        <pre><code>
+    <span class="text_green">селектор</span>, <span class="text_green">селектор</span> {
+        свойство: значение;
+        свойство: значение;
+        свойство: значение;
+    }
+                    </code></pre>
+                    </div>
+                    <p>
+                        В четвёртом случае подключения CSS к документу (см. список) правило CSS, являющееся значением
+                        атрибута style элемента, к которому он применяется, представляет собой перечень
+                        <i>объявлений</i> («<i>свойство CSS</i>&nbsp;: <i>значение</i>»), разделённых знаком «;».
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="contact_container">
+        <h2>Stay in contact</h2>
+        <form id="contact_form" class="form">
+            <input type="email" class="form_input" placeholder="E-mail">
+            <input type="text" class="form_input" placeholder="Name">
+            <textarea class="form_textarea" placeholder="Message"></textarea>
+            <button class="form_button" type="button">Send</button>
+        </form>
+    </div>
+
+    <footer>
+        TelRan School - All rights reserved.
+        <br>
+        Berlin 2022.
+    </footer>
+
+</body>
+
+</html>
+
+<!--
+
+    Grid: https://www.youtube.com/watch?v=9zBsdzdE4sM&t=503s
+
+    Homework:
+    1. Sdelat FLEX strnicu kak pokazal
+    2. FLEX Container -> GRID Elements
+    3. Finish figma page Pied Piper (https://www.figma.com/file/BL7wdCOSIxYFu1uxctuVzg/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B5%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-Pied-Piper?node-id=1961%3A2)
+    4. Add toggle switch to header nav
+-->
