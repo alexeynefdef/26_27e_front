@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/16f9cd2e46.js" crossorigin="anonymous"></script>
     <title>My css page</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -21,10 +22,20 @@
                 <a href="./grid.html" class="head_nav_list_link">Grid</a>
             </li>
             <li class="head_nav_list_item">
-                <a href="#" class="head_nav_list_link">Contact</a>
-            </li>
-            <li class="head_nav_list_item">
                 <a href="./about.html" class="head_nav_list_link">About</a>
+            </li>
+            <li class="head_nav_list_item right">
+                <a href="./login.html" class="head_nav_list_link">Logout</a>
+            </li>
+            <li class="head_nav_list_item_toggle">
+                <div class="toggle">
+                    <input type="checkbox" class="checkbox" id="chk">
+                    <label for="chk" class="label">
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-moon"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
             </li>
         </ul>
     </nav>
@@ -136,6 +147,6 @@
         <br>
         Berlin 2022.
     </footer>
-    
+    <script src="./js/index.js"></script>
 </body>
 </html>

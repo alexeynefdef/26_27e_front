@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/16f9cd2e46.js" crossorigin="anonymous"></script>
     <title>Layout</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -23,10 +24,23 @@
                 <a href="./grid.html" class="head_nav_list_link">Grid</a>
             </li>
             <li class="head_nav_list_item">
-                <a href="#" class="head_nav_list_link">Contact</a>
+                <a href="./about.html" class="head_nav_list_link">About</a>
             </li>
             <li class="head_nav_list_item">
-                <a href="./about.html" class="head_nav_list_link">About</a>
+                <a href="#contact" class="head_nav_list_link">Contact</a>
+            </li>
+            <li class="head_nav_list_item right">
+                <a href="./login.html" class="head_nav_list_link">Logout</a>
+            </li>
+            <li class="head_nav_list_item_toggle">
+                <div class="toggle">
+                    <input type="checkbox" class="checkbox" id="chk">
+                    <label for="chk" class="label">
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-moon"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
             </li>
         </ul>
     </nav>
@@ -458,13 +472,13 @@
         </div>
     </div>
 
-    <div class="contact_container">
+    <div class="contact_container" id="contact">
         <h2>Stay in contact</h2>
         <form id="contact_form" class="form">
-            <input type="email" class="form_input" placeholder="E-mail">
-            <input type="text" class="form_input" placeholder="Name">
-            <textarea class="form_textarea" placeholder="Message"></textarea>
-            <button class="form_button" type="button">Send</button>
+            <input type="email" class="form_input" placeholder="E-mail" id="email">
+            <input type="text" class="form_input" placeholder="Name" id="name">
+            <textarea class="form_textarea" placeholder="Message" id="message"></textarea>
+            <button class="form_button" type="button" id="send">Send</button>
         </form>
     </div>
 
@@ -473,18 +487,25 @@
         <br>
         Berlin 2022.
     </footer>
-
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
 
 <!--
 
-    Grid: https://www.youtube.com/watch?v=9zBsdzdE4sM&t=503s
+    TO RESEARCH: HTML native events.
 
-    Homework:
-    1. Sdelat FLEX strnicu kak pokazal
-    2. FLEX Container -> GRID Elements
-    3. Finish figma page Pied Piper (https://www.figma.com/file/BL7wdCOSIxYFu1uxctuVzg/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B5%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-Pied-Piper?node-id=1961%3A2)
-    4. Add toggle switch to header nav
+    DOM Methods:
+    https://www.w3schools.com/js/js_htmldom_document.asp
+
+
+    Stepik: https://stepik.org/lesson/197141/step/1?unit=171379
+    https://stepik.org/lesson/181717/step/1?unit=156325
+
+    HOMEWORK:
+    1. Change color of "contact" nav element exactly like another nav elements (JS).
+    2. Complete dark theme (font color, div styles ... ).
+    3. Make nav buttons same size.
+    4. Finish footer and img (Login) (Responsive)
 -->
